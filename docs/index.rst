@@ -45,7 +45,8 @@ With the above commands, you can create a FTP connection and create a new /test 
 Uploading and Downloading Files
 -------
 
-You can easily upload files to the connected server via PyTransmit.
+You can easily upload files to the connected server via PyTransmit::
+
    
     app_root = os.path.dirname(os.path.abspath(__file__))
     # Add the file name you want to upload
@@ -57,7 +58,7 @@ You can easily upload files to the connected server via PyTransmit.
     ftp_obj.upload_file(fp_path)
     print(ftp_obj.get_message())
 
-Similarly, you can download the files from the server in the same fashion.
+Similarly, you can download the files from the server in the same fashion::
 
     # Add the filename to download
     ftp_obj.download_file("hello.csv")
