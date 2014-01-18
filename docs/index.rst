@@ -6,7 +6,7 @@
 Welcome to PyTransmit documentation!
 ==========================================
 
-**PyTransmit** is a simple wrapper on top the **ftplib** package which provides an object that can be used to make FTP calls to a PyTransmit installation.
+**PyTransmit** is a simple wrapper on top of the **ftplib** package which provides an object that can be used to make FTP calls to a PyTransmit installation.
 
 Installation
 -------
