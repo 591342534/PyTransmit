@@ -76,3 +76,61 @@ PyTransmit is built on a very small API. The The available functions are:
 
    :param message: The message string.
    :param clear: Buffer Clearance.
+
+.. py:function:: get_message(self)
+
+   Returns the logged message to the console.
+
+   :return: Returns the message.
+
+.. py:function:: connect(self, server, ftp_user, ftp_password, port)
+
+   Connects the remote host to the server from the information provided to the connect method.
+   If the connection is successful, the messaged will logged and displayed in the console, otherwise
+   Exception is raised with the error displayed to the console and program execution halts.
+
+   :param server: The address of the server
+   :param ftp_user: The FTP user id.
+   :param ftp_password: The FTP password.
+   :param port: The port number.
+
+.. py:function:: make_directory(self, directory)
+
+   Creates the new directory in the connected server in the root or in the directory specified via the parameter.
+
+   :param directory: Directory name to create.
+
+.. py:function:: change_directory(self, directory)
+
+   CD's into the directory of our wish by providing the directory name as the parameter to it.
+
+   :param directory: Directory name to change to it.
+
+.. py:function:: directory_exists(self, directory_name)
+
+   Checks if the directory you are trying to upload the files is already present or not and if
+   its already present CD's into the directory and if not, creates the directory and CD's into the
+   newly created directory.
+
+   :param directory_name: Directory name to check its existence.
+
+.. py:function:: get_directory_listing(self)
+
+   Lists all the contents in the connected server or in the specified folder in the server.
+
+.. py:function:: upload_file(self, filename)
+
+   The file provided with filename will be uploaded to the server in the recommended
+   format automatically to the desired directory.
+
+   :param filename: Name of the file to upload.
+
+.. py:function:: download_file(self, filename)
+
+   Downloads the file from the connected server, provided the name is passes as the parameter.
+
+   :param filename: Name of the file to download.
+
+.. py:function:: __del__(self)
+
+   Closes the FTP connection.
