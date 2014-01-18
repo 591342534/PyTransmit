@@ -8,6 +8,26 @@ Welcome to PyTransmit documentation!
 
 **PyTransmit** is a simple wrapper on top the **ftplib** package which provides an object that can be used to make FTP calls to a PyTransmit installation.
 
+Installation
+-------
+
+To install **PyTransmit** from tarball, run the following command::
+
+    python setup.py install
+
+You can also download and install **PyTransmit** directly from the Python Package Index
+using either pip or easy_install::
+
+    pip install PyTransmit
+    easy_install -Z PyTransmit
+
+If you prefer, you can also simply place the **pytransmit** subdirectory somewhere on
+your python path. This is useful if you are running the latest version from
+Mercurial, or want to deploy **pytransmit** with your application on for example Google
+App Engine.
+
+Note that you need Python 2.4 or later to use PyTransmit.
+
 Basics
 -------
 
