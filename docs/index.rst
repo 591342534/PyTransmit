@@ -88,7 +88,7 @@ Similarly, you can download the files from the server in the same fashion::
 API reference
 -------
 
-PyTransmit is built on a very small API. The The available functions are:
+PyTransmit is built on a very small API. The available functions are:
 
 .. py:function:: log_message(self, message, clear=True)
 
