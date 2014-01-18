@@ -13,22 +13,8 @@ Example
 
 This is an example application that handles FTP through PyTransmit::
 
-    .. PyTransmit documentation master file, created by
-   sphinx-quickstart on Fri Jul 26 14:48:13 2013.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
-Welcome to PyTransmit documentation!
-==========================================
-
-**PyTransmit** is a simple wrapper on top the **ftplib** package which provides an object that can be used to make FTP calls to a PyTransmit installation.
-
-Example
--------
-
-This is an example application that handles FTP through PyTransmit::
-
-    from pytransmit import FTPClient
+    
+    	from pytransmit import FTPClient
 
 	ftp_obj = FTPClient()
 
