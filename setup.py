@@ -15,7 +15,7 @@ if sys.version_info >= (3, ):
 setup(
     name='PyTransmit',
     version='0.1',
-    url='',
+    url='http://pythonhosted.org/PyTransmit',
     license='BSD',
     author='Ajay Kumar N',
     author_email='contact@pypix.com',
