@@ -19,6 +19,7 @@ setup(
     license='BSD',
     author='Ajay Kumar N',
     author_email='contact@pypix.com',
+    download_url= "https: //github.com/ajkumar25/PyTransmit/tarball/0.1",
     description='A flexible FTPClient library for python web development.',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
