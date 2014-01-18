@@ -1,4 +1,4 @@
-Welcome to PyTransmit documentation!
+PyTransmit documentation!
 ==========================================
 
 **PyTransmit** is a simple wrapper on top the **ftplib** package which provides an object that can be used to make FTP calls to a PyTransmit installation.
@@ -58,4 +58,10 @@ Similarly, you can download the files from the server in the same fashion::
     # Add the filename to download
     ftp_obj.download_file("hello.csv")
     print(ftp_obj.get_message())
+    
+Resources
+---------
+
+- [Documentation](http://pytransmit.readthedocs.org/en/latest/)
+- [pypi](https://pypi.python.org/pypi/PyTransmit/0.1) 
 
