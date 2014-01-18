@@ -37,7 +37,7 @@ This is an example application that handles FTP through PyTransmit::
     print(ftp_obj.get_message())
 
     # Get Directory Listing
-	 ftp_obj.get_directory_listing()
+    ftp_obj.get_directory_listing()
 
 With the above commands, you can create a FTP connection and create a new /test directory and CD into that directory.
 
