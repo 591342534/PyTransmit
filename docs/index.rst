@@ -47,21 +47,21 @@ Uploading and Downloading Files
 
 You can easily upload files to the connected server via PyTransmit.
    
-	 app_root = os.path.dirname(os.path.abspath(__file__))
-	 # Add the file name you want to upload
-	 file_path = os.path.join(app_root, 'test.txt')
-	 strip_path = file_path.rstrip(os.sep)	
-	 fp_path = os.path.basename(strip_path)
-
-	 # Upload command
-	 ftp_obj.upload_file(fp_path)
-	 print(ftp_obj.get_message())
+    app_root = os.path.dirname(os.path.abspath(__file__))
+    # Add the file name you want to upload
+    file_path = os.path.join(app_root, 'test.txt')
+    strip_path = file_path.rstrip(os.sep)	
+    fp_path = os.path.basename(strip_path)
+    
+    # Upload command
+    ftp_obj.upload_file(fp_path)
+    print(ftp_obj.get_message())
 
 Similarly, you can download the files from the server in the same fashion.
 
-	 # Add the filename to download
-	 ftp_obj.download_file("hello.csv")
-	 print(ftp_obj.get_message())
+    # Add the filename to download
+    ftp_obj.download_file("hello.csv")
+    print(ftp_obj.get_message())
 
 
 API reference
