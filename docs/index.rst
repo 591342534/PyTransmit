@@ -47,7 +47,6 @@ Uploading and Downloading Files
 
 You can easily upload files to the connected server via PyTransmit.
 
-
     app_root = os.path.dirname(os.path.abspath(__file__))
 
     # Add the file name you want to upload
@@ -66,7 +65,7 @@ Similarly, you can download the files from the server in the same fashion.
     print(ftp_obj.get_message())
 
 
-Api reference
+API reference
 -------
 
 PyTransmit is built on a very small API. The The available functions are:
