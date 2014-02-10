@@ -4,7 +4,7 @@ PyTransmit
 
 PyTransmit is a flexible FTPClient library for python web development.
 
-:copyright: Copyright (c) 2010 by Ajay Kumar N.
+:copyright: Copyright (c) 2014 by Ajay Kumar N.
 :license: BSD, see LICENSE.txt for details.
 """
 

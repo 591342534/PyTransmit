@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Flask-Migrate documentation build configuration file, created by
+# PyTransmit documentation build configuration file, created by
 # sphinx-quickstart on Sun Sep  8 19:34:49 2013.
 #
 # This file is execfile()d with the current directory set to its containing dir.
@@ -41,7 +41,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'PyMigrate'
+project = u'PyTransmit'
 copyright = u'2014, Ajay Kumar'
 
 # The version info for the project you're documenting, acts as replacement for
