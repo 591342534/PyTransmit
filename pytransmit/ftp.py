@@ -50,7 +50,7 @@ class FTPClient():
             ftp.connect(server, port)
             ftp.login(user=ftp_user, passwd=ftp_password)
             self.log_message("Connected to {0} for {1} on port {2}".format(server, ftp_user, port))
-        except Exception, e:
+        except Exception as e:
             print(e)
             sys.exit(1)
 
@@ -63,7 +63,7 @@ class FTPClient():
         try:
             ftp.mkd(directory)
             self.log_message("Directory {0} created successfully".format(directory))
-        except Exception, e:
+        except Exception as e:
             print(e)
             sys.exit(1)
 
@@ -76,7 +76,7 @@ class FTPClient():
         try:
             ftp.cwd(directory)
             self.log_message("Current Directory is now {0}".format(ftp.pwd()))
-        except Exception, e:
+        except Exception as e:
             print(e)
             sys.exit(1)
 
@@ -95,7 +95,7 @@ class FTPClient():
             else:
                 self.make_directory(directory_name)
                 self.change_directory(directory_name)
-        except Exception, e:
+        except Exception as e:
             print(e)
             sys.exit(1)
 
@@ -125,7 +125,7 @@ class FTPClient():
                 with open(filename, 'rb') as f:
                     ftp.storbinary('STOR {}'.format(filename), f)
             self.log_message("Uploaded {0} in {1}".format(filename, ftp.pwd()))
-        except Exception, e:
+        except Exception as e:
             print(e)
             sys.exit(1)
 
@@ -138,7 +138,7 @@ class FTPClient():
         try:
             ftp.retrbinary("RETR " + filename, open(filename, 'wb').write)
             self.log_message("Downloaded {0}".format(filename))
-        except Exception, e:
+        except Exception as e:
             print(e)
             sys.exit(1)
 
